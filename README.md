@@ -1,9 +1,9 @@
-**[simple demo project]**
+**[simple project]**
 
 *Used libraries:*
 
-* https://pypi.org/project/colorama/
+* [colorama](https://pypi.org/project/colorama/)
 
-* https://pypi.org/project/matplotlib/
+* [matplotlib](https://pypi.org/project/matplotlib/)
 
 ^>_<^
