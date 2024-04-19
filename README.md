@@ -17,5 +17,3 @@
 * [colorama](https://pypi.org/project/colorama/)
 
 * [matplotlib](https://pypi.org/project/matplotlib/)
-
-.exe built with [nuitka](https://pypi.org/project/Nuitka/)
