@@ -142,7 +142,7 @@ class SetGen:
             args = (alpha, beta)
             rang = log10(stop)*10
             for _ in range(quantity):
-                dist = random.betavariate(*args)
+                dist = random.gammavariate(*args)
                 number = int(start + dist * rang)
                 self.array.append(number)
         except Exception as e:
