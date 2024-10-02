@@ -12,6 +12,8 @@
 
 **[sample project]**
 
+A simple console-based program for measuring and comparing the performance of various sorting algorithms, featuring automated data generation and support for custom data file input :3
+
 Python 3.12 required
 
 *used packages:*
