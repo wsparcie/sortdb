@@ -10,7 +10,7 @@
             /_____//_/|_|/ .___//_/    \___//____//____/     
                         /_/                                  
 
-**[sample project]**
+**SortSetsExpress**
 
 A simple console-based program for measuring and comparing the performance of various sorting algorithms, featuring automated data generation and support for custom data file input :3
 
