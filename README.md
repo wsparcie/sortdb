@@ -2,7 +2,7 @@
 
 **SortSetsExpress**
 
-A simple console-based program for measuring and comparing the performance of various sorting algorithms, featuring automated data generation and support for custom data file input :3
+A simple console-based program for measuring and comparing the performance of various sorting algorithms, featuring automated data generation and support for custom data sets files
 
 Python 3.12 required
 
