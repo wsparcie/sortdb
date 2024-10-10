@@ -12,7 +12,7 @@ Python 3.12 required
 
 * [matplotlib](https://pypi.org/project/matplotlib/)
 
-*The project is currently in its beta phase :3*
+*The project is currently in beta phase*
 
 https://github.com/user-attachments/assets/ae1f0b9d-70df-4373-b79a-29b827c7ea34
 
