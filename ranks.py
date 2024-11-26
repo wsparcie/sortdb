@@ -170,7 +170,7 @@ class Rank(Set):
             sortable = [key for key in rank.keys()]
             additional = list(self.setType)
             sortable.extend(additional)
-            print(f'\t\t{" | ".join(sortable)}')
+            print(f'\t\t{' | '.join(sortable)}')
             text = '\t\tchoose item to sort by: '
             sortType = input(text).strip().upper()
             if sortType in sortable:
