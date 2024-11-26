@@ -32,15 +32,15 @@ class Sort(Rank):
             loops = getattr(self, methodSelection)()
             record = time.perf_counter() - t0
             if record < 1:
-                milliSec = round(record * 1000, 4)
+                milliSec = record * 1000
                 sec = '\t\t'
             else:
                 milliSec = '\t\t'
-                sec = round(record, 4)
+                sec = record
             self.ranks.addRecord(methodSelection, setSelection, record, loops)
             methodText = f'{bcolors.OKBLUE}{methodSelection}{bcolors.ENDC}'
-            setText = f'{bcolors.OKCYAN}{setSelection}{" " * (20 - len(str(setSelection)))}{bcolors.ENDC}'
-            loopsText = f'{loops}{" " * (10 - len(str(loops)))}'
+            setText = f'{bcolors.OKCYAN}{setSelection}{' '*(20 - len(str(setSelection)))}{bcolors.ENDC}'
+            loopsText = f'{loops}{' '*(10 - len(str(loops)))}'
             recordMilliSecText = f'{bcolors.OKGREEN}{milliSec}{bcolors.ENDC}'
             recordSecText = f'{bcolors.FAIL}{sec}{bcolors.ENDC}'
             propsText = self.sets.printProps(True, setSelection)
@@ -78,7 +78,7 @@ class Sort(Rank):
             text1 = f'{methodText}\t|{setText}\t\t\t|{loopsText}\t\t|{recordMilliSecsText}\t|'
             text2 = f'{recordSecsText}\t\t|{setPropsText}\t\t'
             text = f'{text1}{text2}'
-            line = f'{"-" * (len(text) + 50)}'
+            line = f'{(len(text) + 50) * '-'}'
             print(text)
             print(line)
             if setSelection == 'all':

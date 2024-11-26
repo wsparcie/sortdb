@@ -65,24 +65,23 @@ class React:
 
     def exited(self, tabs):
         text = 'exiting'
-        print(f"{'/t' * tabs}{bcolors.FAIL}{self.warnSplitL} {text} {self.warnSplitR}")
+        print(f'{'\t'*tabs}{bcolors.FAIL}{self.warnSplitL} {text} {self.warnSplitR}')
         sleep(1)
         return 1
 
     def failed(self, tabs):
         text = 'incorrect selection'
-        print(f"{bcolors.FAIL}{'    '*tabs}{self.warnSplitL} {text} {self.warnSplitR}")
+        print(f'{bcolors.FAIL}{'\t'*tabs}{self.warnSplitL} {text} {self.warnSplitR}')
         sleep(1)
         return 0
-    
+
     l = f'{Style.BRIGHT}{bcolors.OKCYAN}_____{bcolors.FAIL}'
     r = f'{bcolors.OKCYAN}_____{bcolors.ENDC}'
-
     header = f"""
-    {l}{r}       _____               __  _____        __         ______                                             {r}
-    {l}       / ___/ ____   _____ / /_/ ___/ ___   / /_ _____ / ____/_  __ ____   _____ ___   _____ _____        {r}
-    {l}        \\__ \\ / __ \\ / ___// __/\\__ \\ / _ \\ / __// ___// __/  | |/_// __ \\ / ___// _ \\ / ___// ___/       {r}
-    {l}        ___/ // /_/ // /   / /_ ___/ //  __// /_ (__  )/ /___ _>  < / /_/ // /   /  __/(__  )(__  )       {r}
-    {l}        /____/ \\____//_/    \\__//____/ \\___/ \\__//____//_____//_/|_|/ .___//_/    \\___//____//____/       {r}
-    {l}                                                                    /_/                                   {r}
+     {l}{r'       _____               __  _____        __         ______                                             '}{r}
+    {l}{r'       / ___/ ____   _____ / /_/ ___/ ___   / /_ _____ / ____/_  __ ____   _____ ___   _____ _____        '}{r}
+   {l}{r'        \__ \ / __ \ / ___// __/\__ \ / _ \ / __// ___// __/  | |/_// __ \ / ___// _ \ / ___// ___/       '}{r}
+  {l}{r'        ___/ // /_/ // /   / /_ ___/ //  __// /_ (__  )/ /___ _>  < / /_/ // /   /  __/(__  )(__  )       '}{r}
+ {l}{r'        /____/ \____//_/    \__//____/ \___/ \__//____//_____//_/|_|/ .___//_/    \___//____//____/       '}{r}
+{l}{r'                                                                    /_/                                   '}{r}
     """
