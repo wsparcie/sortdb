@@ -101,7 +101,7 @@ class Set(SetGen):
         source = self.props if source else self.propsTemp
         for key, value in source[id].items():
             keyText = f'{bcolors.OKCYAN}{key}{bcolors.ENDC}'
-            item += f'{keyText}: {value}{' '*(15 - len(str(value)))}'
+            item += f'{keyText}: {value}{" " * (15 - len(str(value)))}'
         return item[:-2]
 
     def read(self):
@@ -306,7 +306,7 @@ class Set(SetGen):
             self.R.printRequest('sort by')
             sortable = [key for key in self.setType.keys() 
                         if not isinstance(self.setType[key], dict)]
-            print(f'\t\t{' | '.join(sortable)}')
+            print(f'\t\t{" | ".join(sortable)}')
             text = '\t\tchoose item to sort by: '
             sortType = input(text).strip().upper()
             if sortType in sortable:
@@ -369,7 +369,7 @@ class Set(SetGen):
 
     def generate(self):
         try:
-            args = (10, 100, 1000, 10000)
+            args = (10, 100, 1000)
             for arg in args:
                 quantity = arg
                 start = 0
