@@ -1,6 +1,14 @@
 /.vscode/
 /sortdb/
+/.venv/
+/__pycache__/
 
 /media/
+/static/
 /sortdb.ico/
 /SortSetsExpress.exe/
+
+.dockerignore
+Dockerfile
+README.DOCKER.md
+compose.yaml
